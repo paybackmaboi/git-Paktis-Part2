@@ -13,7 +13,7 @@ export class UserService {
     }
 
     async getById(id: number) {
-        return this.userRepository.findOne({
+        return this.userRepository.findOne({ 
             where: { id }
         });
     }
